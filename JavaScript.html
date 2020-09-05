@@ -1,0 +1,211 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="YXBJ Windows/601568 (zh-CN, DDL); Windows/6.1.1 (Win64); EDAMVersion=V2;"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 16pt;
+    }
+  </style>
+</head>
+<body>
+<a name="484"/>
+
+<div>
+<span><div><span style="font-size: 16pt;">变量可以储存值或表达式，向变量分配文本值，使用单或双引号；向变量分配数值，不使用引号。</span></div><div><font style="font-size: 16pt;"><br/></font></div><div><span style="font-size: 16pt;">JavaScript基本数据类型包含Undefined，Null，</span><span style="font-size: 16pt;">Number，</span><span style="font-size: 16pt;">String，</span><span style="font-size: 16pt;">Boolean，</span><span style="font-size: 16pt;">Symbol，(BigInt)。引用数据类型（对象类型）包含</span><span style="font-size: 16pt;">Object,</span><span style="font-size: 16pt;">Function,</span><span style="font-size: 16pt;">Data,Array,</span><span style="font-size: 16pt;">等。Symbol 是 ES6 引入了一种新的原始（基本）数据类型，表示独一无二的值。可以储存到一个变量中。</span></div><div><br/></div><div><br/></div><div><span style="font-size: 16pt;">声明无值变量，其值为undefined。重新声明变量无值，原值不会丢。</span></div><div><font style="font-size: 16pt;"><br/></font></div></span>
+</div>
+<hr>
+<a name="488"/>
+
+<div>
+<span><div><span style="font-size: 16pt;">数组创建：var cars=new Array();</span></div><div><span style="font-size: 16pt;">cars[0]=&quot;Saab&quot;;</span></div><div><span style="font-size: 16pt;">cars[1]=&quot;Volvo&quot;;</span></div><div><span style="font-size: 16pt;">cars[2]=&quot;BMW&quot;;</span></div><div><br/></div><div><span style="font-size: 16pt;">var cars=new Array(&quot;Saab&quot;,&quot;Volvo&quot;,&quot;BMW&quot;);</span></div><div><br/></div><div><span style="font-size: 16pt;">var cars=[&quot;Saab&quot;,&quot;Volvo&quot;,&quot;BMW&quot;];</span><br/></div></span>
+</div>
+<hr>
+<a name="528"/>
+
+<div>
+<span><div><div><br/></div><table style="border-collapse: collapse; min-width: 100%;"><colgroup><col style="width: 130px;"></col><col style="width: 130px;"></col></colgroup><tbody><tr><td style="width: 130px; padding: 8px; border: 1px solid;"><div>\n</div></td><td style="width: 130px; padding: 8px; border: 1px solid;"><div>换行</div></td></tr><tr><td style="width: 130px; padding: 8px; border: 1px solid;"><div>\r</div></td><td style="width: 130px; padding: 8px; border: 1px solid;"><div>回车</div></td></tr><tr><td style="width: 130px; padding: 8px; border: 1px solid;"><div>\t</div></td><td style="width: 130px; padding: 8px; border: 1px solid;"><div>制表符</div></td></tr><tr><td style="width: 130px; padding: 8px; border: 1px solid;"><div>\b</div></td><td style="width: 130px; padding: 8px; border: 1px solid;"><div>退格</div></td></tr><tr><td style="width: 130px; padding: 8px; border: 1px solid;"><div>\f</div></td><td style="width: 130px; padding: 8px; border: 1px solid;"><div>换页符</div></td></tr></tbody></table><div><br/></div></div><div><br/></div></span>
+</div>
+<hr>
+<a name="530"/>
+
+<div>
+<span><div>定义字符串不要用new</div><div>var firstNamex = &quot;John&quot;;</div><div>var firstNamey = new String(&quot;John&quot;);</div><div>firstNamex不全等于firstNamey</div><div>typeof firstNamex // returns String</div><div>typeof firstNamey // returns Object</div><div><br/></div><div>字符串的属性</div><div><table style="border-collapse: collapse; min-width: 100%;"><colgroup><col style="width: 158px;"></col><col style="width: 301px;"></col></colgroup><tbody><tr><td style="width: 158px; padding: 8px; border: 1px solid;"><div>constructor</div></td><td style="width: 301px; padding: 8px; border: 1px solid;"><div>返回创建字符串属性的函数</div></td></tr><tr><td style="width: 158px; padding: 8px; border: 1px solid;"><div>length</div></td><td style="width: 301px; padding: 8px; border: 1px solid;"><div>返回字符串的长度</div></td></tr><tr><td style="width: 158px; padding: 8px; border: 1px solid;"><div>prototype</div></td><td style="width: 301px; padding: 8px; border: 1px solid;"><div>允许向对象添加属性和方法</div></td></tr></tbody></table><div><br/></div></div><div><br/></div><div><br/></div></span>
+</div>
+<hr>
+<a name="532"/>
+
+<div>
+<span><div>可以遍历数组或者对象</div><div>var arr1 = new Array(&quot;t1&quot;,&quot;t2&quot;,&quot;t3&quot;);</div><div><br/></div><div>var arr2 = {height:&quot;120&quot;,width:&quot;80&quot;,weight:&quot;100&quot;};</div><div><br/></div><div>for(x in arr1){</div><div>    txt = txt+arr[x];</div><div>}</div></span>
+</div>
+<hr>
+<a name="534"/>
+
+<div>
+<span><div>如果是字符串数组的循环遍历，括号内的判定条件可以省略比较运算。</div></span>
+</div>
+<hr>
+<a name="536"/>
+
+<div>
+<span><div>break可以用于循环和switch等，跳出代码块</div><div>continue的作用是进入下一次迭代，所以只能用于循环的代码块</div><div>通过label标签 break能跳出任何代码块</div><div>labelname：</div><div>statements</div><div><br/></div><div>break labelname；</div></span>
+</div>
+<hr>
+<a name="538"/>
+
+<div>
+<span><div>全局方法</div><div>String()强制转换可转换null和undefined</div><div>Number()若括号内是字符串如&quot;123xyz&quot;或者第一位不是数字，则返回NaN</div><div>Boolean()</div><div><br/></div><div>toString()能转换数字，字符串，对象，布尔，返回相应字符串</div><div>parseInt(string,radix),可以将&quot;123xyz&quot;,返回123</div><div><br/></div><div>typeof NaN    //结果为number</div><div>typeof null     //返回object</div><div><br/></div><div>判断对象是否为Date还是Array</div><div>var arr = new Array();</div><div>function isArr(x){</div><div>    return x.constructor.toString().indexof(&quot;Array&quot;)&gt;-1;</div><div>}</div><div><br/></div><div>一元运算符+可以把字符串转化为数字，除了数字或者带小数点的数字，其余返回NaN</div><div><br/></div><div>当输出对象或者变量，会自动调用toString()方法</div><div>document.getElementById(&quot;demo&quot;).innerHTML = myVar;</div><div>// if myVar = {name:&quot;Fjohn&quot;}  // toString 转换为 &quot;[object Object]&quot;</div><div>// if myVar = [1,2,3,4]       // toString 转换为 &quot;1,2,3,4&quot;</div><div>// if myVar = new Date()      // toString 转换为 &quot;Fri Jul 18 2014 09:08:55 GMT+0200&quot;</div><div><br/></div><div>数字+null               //会将null转换为0</div><div>字符串+数字/null   //会将数字/null转换为字符串</div><div>数字字符串-数字     //会将数字字符串转换为数字</div></span>
+</div>
+<hr>
+<a name="574"/>
+
+<div>
+<span><div>正则表达式 RegExp使用方法</div><div>var patt = /hello/i;</div><div>var patt = new RegExp(/hello/i);</div><div>var patt = new RegExp(&quot;hello&quot;,&quot;i&quot;);</div><div><br/></div><div>修饰符</div><div>i，忽略大小写</div><div>g，全局匹配，没有g则匹配第一个</div><div>m，多行匹配</div><div><br/></div><div>i是修饰符，代表不区分大小写 </div><div>/hello/是模式，用于检索</div><div><br/></div><div>var str = &quot;test,hEllo&quot;;</div><div>var n = str.search(patt);</div><div>返回索引n=5，search只返回第一个匹配到的</div><div>结果</div><div>字符串替换</div><div>var txt = str.replace(patt,&quot;new string&quot;);</div><div>正则表达式可替代字符串</div><div><br/></div><div>正则表达式方法</div><div>patt.test(str); //返回结果是boolean类型</div><div>patt.exec(str); //返回结果是匹配项，如果没有则返回null </div><div><br/></div><div>str.match(patt); //与exec不同，是string方法，返回的是匹配项数组，exec是正则表达式方法，exec返回不论g只有1个元素，只能通过lastIndex进行下一项匹配。</div><div><br/></div><div>compile()方法可以改变正则表达式的模式和第二个参数</div><div>patt.compile(RegExp);  </div><div><br/></div><div><br/></div></span>
+</div>
+<hr>
+<a name="576"/>
+
+<div>
+<span><div>var x=doument.forms[&quot;myForm&quot;][&quot;email&quot;].value;</div><div>var atpots=x.indexOf(&quot;@&quot;);</div><div>var dotpots=x.indexOf(&quot;.&quot;);</div><div>if(atdops &lt; 1 || dotpots &lt; atpots+2 || dotpots+2 &gt;= x.length){</div><div><span>    alert(&quot;not a email adress&quot;);</span></div><div><span>    return false;</span></div><div>}</div><div>dotpots下标从0开始，length长度从1开始计算</div><div>dotpots+N&gt;=x.length   // N的取值经计算可以直接看成需要留的字符数 </div></span>
+</div>
+<hr>
+<a name="578"/>
+
+<div>
+<span><div>href=&quot;#&quot;的锚默认是#top，而javascript:void(0)是死链接，不返回任何值。做死链接使用javascript:void(0)</div><div><br/></div></span>
+</div>
+<hr>
+<a name="610"/>
+
+<div>
+<span><div>使用<span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">函数表达式</span>定义函数</div><div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">var x = function(a,b){};   //函数表达式的匿名函数</span></div><div><span>var y = function e(a,b){}; //函数表达式的命名函数</span></div><div>可以直接使用变量名调用</div><div>var z = x(a,b);</div><div><br/></div><div>函数提升Hoisting：函数在声明之前调用</div><div>表达式定义的函数无法函数提升</div><div><br/></div><div>(function(){};)();   //匿名自我调用函数，第一个括号代表是函数，第二个括号代表自调用</div><div><br/></div><div>函数定义了作为对象的属性，则称对象方法</div><div>函数创建了新的对象，则称对象的构造函数</div><div><br/></div><div><br/></div></span>
+</div>
+<hr>
+<a name="612"/>
+
+<div>
+<span><div>通过值传递的参数在函数内部计算后不会影响函数外的变量值。</div><div>通过对象传递的参数在函数内部计算后会影响函数外的对象，修改属性的初始值。</div></span>
+</div>
+<hr>
+<a name="614"/>
+
+<div>
+<span><div>1.如果函数没有被自身的对象调用时，this会变成全局对象。在web浏览器中，全局对象是浏览器窗口window。</div><div>function myFunction(){</div><div>    return this;</div><div>}</div><div>myFunction();  //返回window对象</div><div><br/></div><div>2.将函数定义为对象的方法时，this会变成对象本身，因为对象拥有这个函数。</div><div>var myObject = {</div><div>    fname:&quot;Dan&quot;;</div><div>    lname:&quot;John&quot;;</div><div>    fullName:function(){</div><div>        return this.fname+&quot; &quot;+this.lname;</div><div>    }</div><div>}</div><div>myObject();   //返回this作为myObject的属性fname+lname</div><div><br/></div><div>3.使用构造函数调用函数，构造函数本身中的this没有任何的值，this的值会在调用时new object时创建</div><div>function myFunction(arg1,arg2){</div><div>    this.attribute1=arg1;</div><div>    this.attribute2=arg2;</div><div>};</div><div>var x= new myFunction(a,b);  //函数中的this指代在对象创建的瞬间具有意义。</div><div><br/></div><div>4.使用函数方法调用函数，call()和apply()是预定义的函数方法，调用时this指向第一个参数</div><div>function myFunction(arg1,arg2){</div><div>    return arg1+arg2;</div><div>};</div><div>myArray=[a,b];</div><div>myFunction.call(this,a,b); //call()方法第二个为参数数值</div><div>myFunction.apply(this,myArray); //apply()方法第二个为参数数组</div><div><br/></div></span>
+</div>
+<hr>
+<a name="616"/>
+
+<div>
+<span><div>定义对象的格式</div><div>var myObject = {</div><div><span>    </span>attribute1:value,</div><div><span>    </span>attribute2:value,<br/></div><div><span>    </span>attribute3:function(){}<br/></div><div>}</div><div>注意使用&quot;,&quot;号而不是&quot;;&quot;号。</div><div><br/></div></span>
+</div>
+<hr>
+<a name="654"/>
+
+<div>
+<span><div>子对象可以级级向上寻找所有父对象的变量，反之不行</div></span>
+</div>
+<hr>
+<a name="658"/>
+
+<div>
+<span><div>element.getElementById(&quot;&quot;);</div><div>element.getElementsByName(&quot;&quot;);</div><div>element.getElementsByTagName(&quot;&quot;);</div><div>element.getElementsByClassName(&quot;&quot;);</div><div><br/></div><div>给指定元素添加事件句柄</div><div>element.addEventListener(event,function,useCapture);</div><div>可以给同一元素添加多个事件句柄不会覆盖</div><div>useCapture描述事件是冒泡或者捕获，为boolean值，false代表冒泡，true为捕获</div><div>冒泡中，内部元素先被触发；捕获中，外部元素先被触发</div><div><br/></div><div>element.removeEventListener(event,function);</div><div><br/></div><div>IE8及之前，Opera7及之前版本不支持addEventListener和removeEventListener,使用attachEvent和detachEvent方法</div><div>attach和detach的event有on前缀</div><div><br/></div><div>var x = document.getElementById(&quot;myBtn&quot;);</div><div>if (x.addEventListener) {   // 所有主流浏览器，除了 IE 8 及更早版本</div><div>    x.addEventListener(&quot;<span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">click</span>&quot;, myFunction);</div><div>} else if (x.attachEvent) {   // IE 8 及更早版本</div><div>    x.attachEvent(&quot;<span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">onclick</span>&quot;, myFunction);</div><div>}</div></span>
+</div>
+<hr>
+<a name="684"/>
+
+<div>
+<span><div>var para = document.createElement(&quot;p&quot;);</div><div>var node = document.createTextNode(&quot;This is paragraph&quot;);</div><div>para.appendChild(node);</div><div><br/></div><div>var elem = document.getElementById(&quot;div1&quot;);</div><div>elem.appendChild(para);</div><div><br/></div><div>节省查找父元素的步骤来移除元素</div><div>child.parentNode.removeChild(child);</div></span>
+</div>
+<hr>
+<a name="686"/>
+
+<div>
+<span><div>javascript是基于prototype的，而不是基于类</div><div>不会创建类，也不会通过类来创建对象</div></span>
+</div>
+<hr>
+<a name="688"/>
+
+<div>
+<span><div>var y = 0377;    //0开头为八进制</div><div>var z =0xFF;<span>      //0x开头为十六进制</span></div><div><span><br/></span></div><div><span>myNumber.toString(16);   //toString方法转换2，8，16进制</span></div></span>
+</div>
+<hr>
+<a name="690"/>
+
+<div>
+<span><div>str.indexOf(searchValue);</div><div>str.indexOf(searchValue, fromIndex);</div><div>str.indexOf(searchValue); </div><div>//返回第一次出现的searchValue在str中的索引，没找到则返回-1</div><div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">如果</span><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">searchValue</span><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">是空字符串，返回fromIndex，且fromIndex如果大于str.length则返回length</span></div><div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div><div><span>str.lastIndexOf</span>(searchValue[, fromIndex]<span>);</span></div><div>从索引fromIndex开始从右往左查找searchValue</div><div>索引仍是以从左至右0开始记数的</div><div>fromIndex默认值为+Infinity，如果fromIndex&gt;str.length，则取length，&lt;0则取0</div><div><br/></div><div><br/></div><div><br/></div><div><br/></div></span>
+</div>
+<hr>
+<a name="692"/>
+
+<div>
+<span><div>str.substring(indexStart[, indexEnd]);</div><div>截取从indexStart到indexEnd索引之间的字符</div><div>如果相等，返回空字符串</div><div>如果start&gt;end，则自动调换位置</div><div>如果只有一个参数则为indexStart，截取从indexStart到结尾索引之间的字符</div><div>如果有&lt;0或者NaN则会被当作0</div><div>如果任一参数大于str.length，则视为str.length</div></span>
+</div>
+<hr>
+<a name="694"/>
+
+<div>
+<span><div>str.match(regexp|substr);   //(/hello/g);   (&quot;hello&quot;);</div><div>匹配正则表达式或字符串，字符串带引号，返回所有匹配到的第一个结果</div><div><br/></div><div>如果regexp使用i,g标志则返回所有结果</div><div><br/></div><div>str.replace(regexp|substr,str);   //(/hello/g,&quot;hi&quot;);</div><div>替换正则表达式或字符串，返回新str，字符串带引号，如果regexp没有带g则只替换第一个符合的字符串</div></span>
+</div>
+<hr>
+<a name="702"/>
+
+<div>
+<span><div>new Date();</div><div>new Date(value);</div><div>new Date(dateString);</div><div>new Date(year, monthIndex [, day [, hours [, minutes [, seconds [, milliseconds]]]]]);</div><div><br/></div><div><br/></div><div>year //0~99会被映射至1900~1999</div><div>monthIndex //0~11</div><div>day //1~</div><div>如果数值超过合理范围，会自动调整，day默认值为1，除了年月日，其他参数默认为0</div><div><br/></div><div>var date = new Date();</div><div>返回自1970/01/01以来的毫秒数：</div><div>var date2 = Date.now();</div><div>var date3 = date.getTime();</div><div>//date2==date3;</div><div><br/></div><div>date.getFullYear(); // 四位数年份时返回四位数字</div><div>date.getMonth();</div><div>date.getDate(); // 返回月份中的第几天（1~31）</div><div>date.getDay();  //返回星期内的第几天（0~6）</div><div>date.getHours(); </div><div>date.getMinutes();</div><div>date.getSeconds();</div><div>date.getMilliseconds();</div><div><br/></div><div><br/></div></span>
+</div>
+<hr>
+<a name="716"/>
+
+<div>
+<span><div>array.join(separator); //以指定分隔符连结数组返回字符串</div><div>array1.concat(array2,array3,...,arrayX); //在array1后添加array2...返回新数组，原数组不变</div><div>array.lastIndexOf(value); //从后往前查找返回索引</div><div>array.every(function); //检测每个元素，返回boolean，只要有一个不符合就为false，且停止检测，全部符合为true</div><div>array.some(function);  //检测每个元素，返回boolean，只要有一个元素符合就为true，且停止检测，全部不符合为false</div><div>array.filter(function);  //返回一个新数组，内容为符合条件的所有元素</div><div>array.pop(); //移除数组最后一个元素，会改变数组</div><div>array.shift(); //移除第一个元素，会改变数组</div><div>array.push(value); //在数组末尾添加新元素，会改变数组</div><div>array.unshift(value); //在数组起始位置添加新元素，会改变数组</div><div>array.slice(start,end); //从start索引元素截取到end索引元素，不包含end本身，不会改变原数组</div><div>array.sort(sortfunction)l;  //排序，会改变原数组</div><div><br/></div></span>
+</div>
+<hr>
+<a name="718"/>
+
+<div>
+<span><div>是三种包装对象里最简单的一种，Number,String,Boolean</div><div>三种原始类型在一定条件下，也会自动转为对象，也就是原始类型的“包装对象”（wrapper）</div><div>var x = new Boolean(value);  //返回boolean</div><div>0,-0,null,&quot;&quot;,false,undefined,NaN返回为false，否则为true</div></span>
+</div>
+<hr>
+<a name="720"/>
+
+<div>
+<span><div>Math.round(value);  //四舍五入到最近的整数，  参数上加0.5然后进行下取整</div><div>Math.round(2.5);    //3</div><div>Math.round(2.49);  //2</div><div>Math.round(-2.49);  //-2</div><div>Math.round(-2.5);    //-2</div><div>Math.round(-2.51);  //-3</div><div><br/></div><div>Math.random();  //区间[0,1)</div><div><br/></div><div>Math.max(); </div><div>Math.min(); </div><div>Math.floor(x); //返回小于x的最大整数</div></span>
+</div>
+<hr>
+<a name="734"/>
+
+<div>
+<span><div><img src="JavaScript_files/Window.gif" type="image/gif" data-filename="Window.gif"/></div><div><br/></div></span>
+</div>
+<hr>
+<a name="738"/>
+
+<div>
+<span><div>子对象主要有：document，frames，history，location，navigator，screen。</div><div><br/></div><div>window.innerHeight/window.innerWidth  //浏览器窗口内部宽高</div><div>保证兼容性：</div><div> var w=window.innerWidth</div><div>|| document.documentElement.clientWidth  //(IE8 7 6 5)</div><div>|| document.body.clientWidth;</div><div><br/></div><div>var h=window.innerHeight</div><div>|| document.documentElement.clientHeight</div><div>|| document.body.clientHeight;</div><div><br/></div><div>screen.availHeight/screen.availWidth  //屏幕可用宽度</div><div><br/></div><div>location.hostname  //web主机域名</div><div>location.pathname  //当前页面路径和文件名</div><div>location.protocol  //所使用的web协议</div><div>location.href  //当前页面的URL</div><div><br/></div><div>history.back() //相当于点击后退按钮</div><div>history.forward() //相当于点击前进按钮</div><div><br/></div><div>navigator对象可能有误导性，不应该用于检测浏览器版本，因为navigator数据可以被更改，或者浏览器不能报告晚于其发布的新OS,一些浏览器对测试站点会识别错误</div><div>但能用于识别浏览器，比如只有Opera支持window.opera属性</div><div>if(window.opera) {};</div><div><br/></div><div>alert(&quot;sometext&quot;);</div><div>result = confirm(&quot;sometext&quot;);  //提示sometext信息，result为boolean值</div><div>prompt(&quot;sometext&quot;,defaultvalue);  //带输入框的弹窗</div><div><br/></div><div>myVar = setInterval(function,milliseconds);  //固定间隔不停调用函数</div><div>在创建计时时必须用全局变量，才能使用clearInterval()方法</div><div>clearInterval(myVar);  //停止</div><div><br/></div><div>myVar = setTimeout(function,milliseconds);  //经过数秒后执行函数</div><div>clearTimeout(myVar);  //停止</div><div><br/></div><div><br/></div><div><br/></div></span>
+</div>
+<hr>
+<a name="740"/>
+
+<div>
+<span><div>cookie以键值对储存</div><div>document.cookie=&quot;username=john doe; expires=Thu,18 Dec 2013 12:00:00 GMT; path=/;&quot;</div><div><br/></div><div>使用javascript删除cookie：</div><div>document.cookie=&quot;username=; expires=Thu,18 Dec 2013 12:00:00 GMT;&quot;</div><div>时间设置为以前的时间</div></span>
+</div>
+<hr>
+<a name="758"/>
+
+<div>
+<span><div>HTML注释</div><div>&lt;!-- --&gt; </div><div>javascript注释</div><div>//、/* */</div><div>cssz注释</div><div>/* */</div></span>
+</div>
+<hr>
+<a name="764"/>
+
+<div>
+<span><div>标识符由数字，字母，下划线，$组成，且首字符不能为数字</div><div>当对象属性名为非法命名或者纯数字时，需要添加双引号</div><div>读取对象属性时，也最好使用中括号形式</div></span>
+</div>
+<hr>
+<a name="964"/>
+
+<div>
+<span><div><br/></div></span>
+</div></body></html> 

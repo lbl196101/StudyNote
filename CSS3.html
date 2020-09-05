@@ -1,0 +1,109 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="YXBJ Windows/601568 (zh-CN, DDL); Windows/6.1.1 (Win64); EDAMVersion=V2;"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 16pt;
+    }
+  </style>
+</head>
+<body>
+<a name="802"/>
+
+<div>
+<span><div>基本所有浏览器支持border-radius、border-shadow<br/></div><div>safari5及以前使用border-image需要前缀-webkit-</div><div>opera使用border-image需要前缀-o-</div><div>IE不支持border-image</div><div><br/></div><div>border-shadow:x轴 y轴 模糊度 颜色;</div></span>
+</div>
+<hr>
+<a name="804"/>
+
+<div>
+<span><div>background-image</div><div>background-size    </div><div>background-origin</div><div>//指定背景图像的位置区域，border-box/padding-box/content-box</div><div>background-clip</div></span>
+</div>
+<hr>
+<a name="806"/>
+
+<div>
+<span><div>linear-gradient  //线性渐变，从上至下</div><div>(to top/right/bottom/right, color1, color2)</div><div>(angle,color1,color2)</div><div>radial-gradient  //径向渐变，从中心向外</div><div><br/></div></span>
+</div>
+<hr>
+<a name="808"/>
+
+<div>
+<span><div>text-shadow(x y 模糊 扩大 color)</div><div>box-shadow(x y 模糊 扩大 color)</div><div>纸质样式卡片</div><div>box-shadow(0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19));</div><div><br/></div><div>text-overflow:</div><div>ellipsis //使用...表示溢出</div><div>clip      //直接裁剪溢出部分</div><div>'&gt;&gt;'<span>    //使用&gt;&gt;表示溢出(Firefox)</span></div><div><span><br/></span></div><div>word-wrap:</div><div>break-word<span>    //允许对长的不可分割的单词进行分割换行</span></div><div><span><br/></span></div><div>word-break:(不兼容opera)</div><div>keep-all<span>    //不拆分</span></div><div><span>break-all   //拆分所有单词换行</span></div></span>
+</div>
+<hr>
+<a name="810"/>
+
+<div>
+<span><div>将字体存放到web服务器，需要时会自动下载到用户计算机</div><div>@font-face{</div><div><span>    font-family:myFont;</span><br/></div><div><span><span>    src:url(...);</span><br/></span></div><div><span>}</span></div><div>div{</div><div><span>    font-family:myFont;</span><br/></div><div><span>}</span></div></span>
+</div>
+<hr>
+<a name="812"/>
+
+<div>
+<span><div>transform:</div><div>2D变换</div><div>translate(x,y)</div><div>rotate(deg)</div><div>scale(width放大倍数,height放大倍数)</div><div>skew(倾斜角度,倾斜角度)</div><div>matrix()</div><div><br/></div><div>3D变换</div><div>rotateX(xdeg)  //给定度数按x轴旋转</div><div>rotateY(ydeg)  //给定度数按y轴旋转</div><div><br/></div><div><br/></div></span>
+</div>
+<hr>
+<a name="814"/>
+
+<div>
+<span><div>div{</div><div><span>    </span>transition:method time;    //time必需</div><div>}</div><div>div:hover{</div><div><span>    method;</span><br/></div><div><span>}</span></div></span>
+</div>
+<hr>
+<a name="922"/>
+
+<div>
+<span><div>box-sizing:</div><div>默认content-box </div><div>border-box    //将元素的padding和border计算进width和height</div><div><br/></div><div>outline-offset   //对轮廓进行偏移，超出边框边缘绘制轮廓，轮廓不占空间</div><div><br/></div><div>resize:</div><div>horizontal  //宽度可调整</div><div>vertical     //高度可调整</div><div>both</div><div><br/></div></span>
+</div>
+<hr>
+<a name="924"/>
+
+<div>
+<span><div>img{</div><div><span>    width:100%;</span><br/></div><div><span><span>    height:auto;</span><br/></span></div><div><span>}</span></div></span>
+</div>
+<hr>
+<a name="938"/>
+
+<div>
+<span><div>&lt;button class=&quot;button&quot; type=&quot;button&quot; style=&quot;vertical-align:middle&gt;&lt;span&gt;Hover&lt;/span&gt;&lt;/button&gt;</div><div>.button {</div><div>    border-radius:4px;</div><div>    text-align:center;</div><div>    width:200px;</div><div>    padding:20px;</div><div><span>    margin:5px;</span><br/></div><div>    font-size:28px;</div><div>    cursor:pointer;</div><div><span>    color:#fff;</span><br/></div><div><span><span>    transition:all 0.5s;</span><br/></span></div><div><span>}</span></div><div><span><br/></span></div><div><span>.button span {</span></div><div><span><span>    cursor:pointer;</span><br/></span></div><div><span><span>    position:relative;</span><br/></span></div><div><span><span>    transition:0.5s;</span><br/></span></div><div><span>}</span></div><div><span><br/></span></div><div><span>.button span:after {</span></div><div><span><span>    content:&quot;&gt;&gt;&quot;;</span><br/></span></div><div><span><span>    position:absolute;</span><br/></span></div><div><span><span>    opacity:0;</span><br/></span></div><div><span><span>    top:0;</span><br/></span></div><div><span><span>    right:-20px;</span><br/></span></div><div><span><span>    transition:0.5s;</span><br/></span></div><div><span>}</span></div><div><span><br/></span></div><div><span>.button:hover span {</span></div><div><span><span>    padding-right:25px;</span><br/></span></div><div>}</div><div><br/></div><div>.button:hover span:after {</div><div><span>    opacity:1;</span><br/></div><div><span><span>    right:0;</span><br/></span></div><div><span>}</span></div><div><br/></div></span>
+</div>
+<hr>
+<a name="940"/>
+
+<div>
+<span><div>&lt;button class=&quot;button&quot; &gt;Click Me&lt;/button&gt;</div><div><br/></div><div>.button {</div><div><span>    border:none;</span><br/></div><div><span><span>    padding:20px;</span><br/></span></div><div><span><span>    width:200px;</span><br/></span></div><div><span><span>    font-size:28px;</span><br/></span></div><div><span><span>    text-align:center;</span><br/></span></div><div><span><span>    text-decoration:none;</span><br/></span></div><div><span>    cursor:pointer;</span><br/></div><div><span>    position</span><br/></div><div><span>}</span></div><div><span><br/></span></div><div><span>.button:after {</span></div><div><span><span>    content:&quot;&quot;;</span><br/></span></div><div><span><span>    background:color;</span><br/></span></div><div><span><span>    display:block;</span><br/></span></div><div><span><span>    //脱离文档流</span><br/></span></div><div><span><span>    position:absolute;</span><br/></span></div><div><span><span>    //填充after</span><br/></span></div><div><span><span>    padding-top:300%;</span><br/></span></div><div><span><span>    padding-left:300%;</span><br/></span></div><div><span><span>    //定位</span><br/></span></div><div><span><span>    margin-top:-120%;</span><br/></span></div><div><span><span>    margin-left:-20px;important!;</span><br/></span></div><div><span><span>    opacity:0;</span><br/></span></div><div><span><span>    transition:0.8s;</span><br/></span></div><div><span>}</span></div><div><span><br/></span></div><div><span>.button:active:after {</span></div><div><span><span>    padding:0;</span><br/><span>    margin:0;</span></span></div><div><span><span>    opacity:1;</span><br/></span></div><div><span><span>    transition:0s;  //必需</span><br/></span></div><div><span>} </span></div><div><span><br/></span></div><div><span><span>    </span><br/></span></div><div><span><br/></span></div><div><span><span>    </span><br/></span></div><div><span><br/></span></div></span>
+</div>
+<hr>
+<a name="942"/>
+
+<div>
+<span><div>&lt;button class=&quot;button&quot; &gt;click me &lt;/button&gt;</div><div>.button {</div><div><span>    border-radius:15px;</span><br/></div><div><span><span>    padding:15px 25px;</span><br/></span></div><div><span><span>    text-align:center;</span><br/></span></div><div><span><span>    box-shadow:0 9px #999;</span><br/></span></div><div><span>    transition:0.2s;</span><br/></div><div><span>}</span></div><div><span><br/></span></div><div><span>.button:hover {</span></div><div><span><span>    background:#color;</span><br/></span></div><div><span>}</span></div><div><span><br/></span></div><div><span>.button:active {</span></div><div><span>    </span>background:#color;</div><div><span><span>    box-shadow:0 5px #666;</span><br/></span></div><div><span><span>    transform:translateY(5px);</span><br/></span></div><div><span>}</span></div></span>
+</div>
+<hr>
+<a name="946"/>
+
+<div>
+<span><div>adisplay:flex;</div><div>display:inline-flex;</div><div>默认每个容器只有一行</div><div>a</div><div>更改元素位置</div><div>decoration:rtl;</div><div><br/></div><div>flex-decoration:row/row-reseve/column/column-reverse;</div><div><br/></div><div>justify-content:</div><div><img src="CSS3_files/flexbox.jpg" type="image/jpeg" data-filename="flexbox.jpg"/></div><div><br/></div><div><br/></div></span>
+</div>
+<hr>
+<a name="954"/>
+
+<div>
+<span><div>&lt;div class=&quot;container&quot;&gt;</div><div><span>    &lt;img src =&quot;&quot;&gt;</span><br/></div><div><span>    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;</span><br/></div><div><span><span>    &lt;div class=&quot;buttons&quot;&gt;</span><br/></span></div><div><span><span>    </span><span>    &lt;a class=&quot;btn1&quot;&gt;icon&lt;/a&gt;</span><br/></span></div><div><span><span>    &lt;/div&gt;</span><br/></span></div><div><span>&lt;/div&gt;</span></div><div><span><br/></span></div><div>&lt;style&gt;</div><div>.container {</div><div><span>    /*防止overlay高度为0*/</span><br/></div><div><span>    position:relative;</span><br/></div><div><span>}</span></div><div><span><br/></span></div><div><span>.overlay {</span><br/></div><div><span><span>    width:100%;</span><br/></span></div><div><span><span>    height:100%;</span><br/></span></div><div><span><span>    opacity:0;</span><br/></span></div><div><span><span>    background-color:rgba(0,0,0,0.5);</span><br/></span></div><div><span><span>    position:absolute;</span><br/></span></div><div><span><span>    left:0;</span><br/></span></div><div><span><span>    top:0;</span><br/></span></div><div><span><span>    /*overlay动画*/</span><br/></span></div><div><span><span>    transition:all 0.3s;</span><br/></span></div><div><span>}</span></div><div><span><br/></span></div><div><span>.buttons {</span></div><div><span>    position:absolute;</span></div><div><span><span>    left:50%;</span><br/></span></div><div><span><span>    top:50%;</span><br/></span></div><div><span><span>    /*负偏移自身的长宽使内容居中*/</span><br/></span></div><div><span><span>    transform:translate(-50%,-50%);</span><br/></span></div><div><span>}</span></div><div><span><br/></span></div><div><span>.btn1 {</span></div><div><span><span>    height:x;</span><br/></span></div><div><span><span>    line-height:x;</span><br/></span></div><div><span><span>    opacity:0;</span><br/></span></div><div><span><span>    //以中心点进行缩放</span><br/></span></div><div><span><span>    text-align:center;</span><br/></span></div><div><span><span>    //放大5倍</span><br/></span></div><div><span><span>    transform:scale(5);</span><br/></span></div><div><span><span>    /*按钮动画*/</span><br/></span></div><div><span><span>    transition:transform 0.3s,opacity 0.3s;</span><br/></span></div><div><span>}</span></div><div><span><br/></span></div><div><span>.container:hover .btn {</span></div><div><span><span>    opacity:1;</span><br/></span></div><div><span><span>    /*原倍率大小*/</span><br/></span></div><div><span><span>    transform:scale(1);</span><br/></span></div><div><span>｝</span></div><div><span><br/></span></div><div>.container:hover .overlay {</div><div><span>    opacity:1;</span><br/></div><div><span>}</span></div><div><span><span>    </span><br/></span></div><div><span><br/></span></div><div><span><span>    </span><br/></span></div></span>
+</div>
+<hr>
+<a name="966"/>
+
+<div>
+<span><div>.btn {</div><div>    width:200px;</div><div>    height:50px;</div><div>    background:transparent;</div><div>    position:relative;</div><div>    /*按钮hover过渡*/</div><div>    transition: all 0.4s;</div><div>    border:2px solid #color1;</div><div><span>    z-index:0;</span><br/></div><div>}</div><div><br/></div><div>.btn:hover:before {</div><div>    /*从右至左注入*/</div><div>    right:0%;             </div><div>    left:auto;</div><div>    width:100%;</div><div>}</div><div><br/></div><div>.btn:before {</div><div>    display:block;</div><div>    position:absolute;</div><div>    top:0px;</div><div>    left:0px;</div><div>    height:100%;</div><div>    width:0px;</div><div>    z-index:-1;</div><div>    content:'';</div><div>    background:#color1;</div><div>    /*注入过渡*/</div><div>    transition:all 0.4s;</div><div>}</div><div><br/></div><div><br/></div></span>
+</div>
+<hr>
+<a name="994"/>
+
+<div>
+<span><div>text-shadow:h-shadow v-shadow blur-radius color;</div></span>
+</div></body></html> 
